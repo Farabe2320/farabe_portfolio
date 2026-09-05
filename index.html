@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark" id="nav-mark">—</a>
+    <nav class="nav-links" id="nav-links"></nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ============ HOME PAGE (Hero + Gallery + About) ============ -->
+<div class="page active" id="page-home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <p class="hero-greeting" id="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name" id="hero-name"></h1>
+        <p class="hero-role" id="hero-role"></p>
+        <p class="hero-address" id="hero-address"></p>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <p class="hero-interest" id="hero-interest"></p>
+        <div class="hero-actions" id="hero-actions"></div>
+      </div>
+      <div class="hero-photo" id="hero-photo"></div>
+    </div>
+    <div class="hero-stats" id="hero-stats"></div>
+  </section>
+
+  <!-- ============ PHOTO GALLERY (auto slideshow) ============ -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-slideshow" id="gallery-slideshow">
+      <div class="gallery-track" id="gallery-track"></div>
+      <button class="gallery-arrow prev" id="gallery-prev" aria-label="Previous photo">‹</button>
+      <button class="gallery-arrow next" id="gallery-next" aria-label="Next photo">›</button>
+      <div class="gallery-dots" id="gallery-dots"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-tag">ABOUT</p>
+      <div class="about-body wide" id="about-body"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <p class="section-tag light">GET IN TOUCH</p>
+      <h2 class="footer-heading" id="footer-heading"></h2>
+      <p class="footer-note" id="footer-note"></p>
+      <div class="footer-socials" id="footer-socials"></div>
+      <div class="footer-bottom">
+        <span id="footer-copyright"></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ============ RESEARCH (own page) ============ -->
+<div class="page" id="page-research">
+  <section class="section alt" id="research">
+    <div class="section-inner">
+      <p class="section-tag">RESEARCH</p>
+      <div class="card-grid" id="research-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PROJECTS: Academic + link to Formula Student (own page) ============ -->
+<div class="page" id="page-projects-hub">
+  <section class="section" id="academic-projects">
+    <div class="section-inner">
+      <p class="section-tag">PROJECTS</p>
+      <h2 class="projects-heading">Projects</h2>
+      <div class="projects-hub-layout">
+        <div class="projects-hub-main">
+          <h3 class="projects-subheading">Academic</h3>
+          <div class="card-grid" id="academic-projects-grid"></div>
+        </div>
+        <a href="#formula-student-projects" class="formula-tile" id="formula-tile">
+          <div class="formula-tile-overlay">
+            <span class="formula-tile-label">Formula Student Projects</span>
+            <span class="formula-tile-cta">View Projects →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ FORMULA STUDENT PROJECTS (own page) ============ -->
+<div class="page" id="page-formula-projects">
+  <section class="section alt" id="formula-projects-section">
+    <div class="section-inner">
+      <p class="section-tag">FORMULA STUDENT PROJECTS</p>
+      <h2 class="projects-heading"><span class="projects-subheading-icon" aria-hidden="true">🏎️</span> Formula Student Projects</h2>
+      <div class="card-grid" id="formula-projects-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ INTERNSHIP EXPERIENCE (own page) ============ -->
+<div class="page" id="page-internship">
+  <section class="section alt" id="projects">
+    <div class="section-inner">
+      <p class="section-tag">INTERNSHIP EXPERIENCE</p>
+      <div class="card-grid" id="projects-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ACTIVITIES + AWARDS (own page) ============ -->
+<div class="page" id="page-activities">
+  <section class="section" id="activities">
+    <div class="section-inner">
+      <p class="section-tag">ACTIVITIES &amp; AWARDS</p>
+      <div class="activities-grid">
+        <div class="activities-col">
+          <h3 class="col-heading">Extracurricular &amp; Leadership</h3>
+          <div id="activities-list"></div>
+        </div>
+        <div class="activities-col">
+          <h3 class="col-heading">Awards &amp; Honors</h3>
+          <div id="awards-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ HOBBIES (own page) ============ -->
+<div class="page" id="page-hobbies">
+  <section class="section alt" id="hobbies">
+    <div class="section-inner">
+      <p class="section-tag">HOBBIES &amp; INTERESTS</p>
+      <p class="section-intro" id="hobbies-intro"></p>
+      <div class="card-grid" id="hobbies-row"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CERTIFICATIONS (own page) ============ -->
+<div class="page" id="page-certifications">
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <p class="section-tag">CERTIFICATIONS</p>
+      <div class="card-grid" id="certifications-grid"></div>
+    </div>
+  </section>
+</div>
+
+<script src="content.js" defer></script>
+<script src="script.js" defer></script>
+
+<!-- ============ VIDEO CV MODAL ============ -->
+<div class="video-modal-overlay" id="video-modal-overlay">
+  <div class="video-modal-box">
+    <button class="video-modal-close" id="video-modal-close" aria-label="Close">✕</button>
+    <div class="video-modal-body" id="video-modal-body"></div>
+  </div>
+</div>
+
+<!-- ============ IMAGE LIGHTBOX ============ -->
+<div class="image-lightbox-overlay" id="image-lightbox-overlay">
+  <div class="image-lightbox-box">
+    <button class="image-lightbox-close" id="image-lightbox-close" aria-label="Close">✕</button>
+    <div class="image-lightbox-body" id="image-lightbox-body"></div>
+  </div>
+</div>
+
+<!-- ============ PPTX VIEWER MODAL ============ -->
+<div class="pptx-modal-overlay" id="pptx-modal-overlay">
+  <div class="pptx-modal-box">
+    <button class="pptx-modal-close" id="pptx-modal-close" aria-label="Close">✕</button>
+    <div class="pptx-modal-body" id="pptx-modal-body"></div>
+  </div>
+</div>
+
+<!-- ============ PROJECT DETAIL MODAL ============ -->
+<div class="project-modal-overlay" id="project-modal-overlay">
+  <div class="project-modal-box">
+    <button class="project-modal-close" id="project-modal-close" aria-label="Close">✕</button>
+    <div class="project-modal-body" id="project-modal-body"></div>
+  </div>
+</div>
+</body>
+</html>
