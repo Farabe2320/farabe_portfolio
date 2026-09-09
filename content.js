@@ -55,7 +55,7 @@ const PORTFOLIO_DATA = {
     // button open the video popup instead of acting as a normal link.
     actions: [
       { label: "Download CV", url: "CV_Md_Ferdaous_Al-Farabe.pdf.pdf", primary: true },
-      { label: "Watch Video CV", videoTrigger: true, primary: false },
+      //{ label: "Watch Video CV", videoTrigger: true, primary: false },
       { label: "Email Me", url: "mailto:faraberuet@gmail.com", primary: false },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/farabe-ruet", primary: false },
     ],
