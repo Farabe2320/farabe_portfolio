@@ -48,14 +48,13 @@ const PORTFOLIO_DATA = {
     photo: "photo.jpg",
 
     // Filename of your video CV (put the file in this same folder).
-    // Leave as "" for now — the button will show "coming soon" until
-    // you add a real video file here.
+    // Leave as "" for now — the button will show "coming soon".
     videoCV: "",
 
     // Buttons under the intro text. "videoTrigger: true" makes a
     // button open the video popup instead of acting as a normal link.
     actions: [
-      { label: "Download CV", url: "cv.pdf", primary: true },
+      { label: "Download CV", url: "CV_Md_Ferdaous_Al-Farabe.pdf", primary: true },
       { label: "Watch Video CV", videoTrigger: true, primary: false },
       { label: "Email Me", url: "mailto:faraberuet@gmail.com", primary: false },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/farabe-ruet", primary: false },
